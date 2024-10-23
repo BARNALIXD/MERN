@@ -2,19 +2,8 @@ const express = require("express");
 const app = express();
 const router = require("./router/auth-router");
 
+//Mount the router : to use the router in your main express app, you can "mount" it at a specific url
 app.use("/api/auth", router);
-
-app.get("/", (req, res) => {
-  res
-  .status(200)
-  .send("Welcome to thapa technical Mern Series Updated");
-});
-
-app.get("/register", (req, res) => {
-  res
-  .status(200)
-  .json({ msg: "registration successful" });
-});
 
 const PORT = 5000;
 app.listen(PORT, () => {
