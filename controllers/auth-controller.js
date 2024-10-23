@@ -16,7 +16,7 @@ const home = async(req, res) => {
 //REGISTRATION LOGIC
 const register = async(req, res) => {
     try {
-        res.status(200).send("Registration Page");
+        res.status(200).send("Registration Page again");
     } catch (error) {
         res.status(400).send({"page not found"})
     }
